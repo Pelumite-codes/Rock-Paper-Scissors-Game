@@ -66,10 +66,12 @@ function playGame(playerMove) {
 
   showScore();
   resultParagraph.innerHTML = result;
-  moves.innerHTML = `Your Move
-  <img src="./images/${playerMove}.png" alt="">
-  <img src="./images/${computerMove}.png" alt="">
-  Computer Move`
+  moves.innerHTML = `<p>
+  Your move -<img src="./images/${playerMove}.png" alt="">
+</p>
+<p>
+  Computer move -<img src="./images/${computerMove}.png" alt="">
+</p>`
 
   localStorage.setItem('score', JSON.stringify(score));
 }

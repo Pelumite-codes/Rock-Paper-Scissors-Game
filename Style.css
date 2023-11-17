@@ -14,21 +14,32 @@
   background-color: burlywood;
 }
 .content{
-  margin-top: 50px;
+  /* margin-top: 50px; */
   /* padding: 10px; */
   background-color:brown;
   border-radius: 20px;
 }
 h2{
-  font-size: 30px;
+  font-size: 2rem;
   color: burlywood;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 15px;
 }
+@media only screen and (max-width: 375px) {
+  h2{
+    margin: 8px;
+    font-size: 1.5rem;
+  }
+}
 img{
   width: 60px;
+}
+@media only screen and (max-width: 375px) {
+  img{
+    width: 45px;
+  }
 }
 .buttons{
   display: flex;
@@ -44,6 +55,13 @@ img{
   margin: 10px;
   cursor: pointer;
 }
+@media only screen and (max-width: 375px) {
+  .img-button{
+    margin: 5px;
+    width: 80px;
+    height: 80px;
+  }
+}
 .btn-reset{
   margin: 15px;
   background-color: burlywood;
@@ -53,6 +71,12 @@ img{
   border: none;
   border-radius: 15px;
   cursor: pointer;
+}
+@media only screen and (max-width: 375px) {
+  .btn-reset{
+    margin: 10px;
+    font-size: 15px;
+  }
 }
 .score{
   color: burlywood;
@@ -67,10 +91,17 @@ p{
 .result-pg{
   color: burlywood;
   font-size: 15px;
-  margin: 5px;
+  margin: 15px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
 }
 .moves-style{
   color: burlywood;
-  margin: 5px;
+  margin: 10px;
   font-size: 15px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
 }
